@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Clay Bryden — Marketing Graduate Portfolio. Social media campaigns, event promotion, and small-business marketing. Based in Alberta.">
+<meta property="og:title" content="Clay Bryden — Marketing Graduate Portfolio">
+<meta property="og:description" content="Social media campaigns, event promotion, and small-business marketing. Based in Alberta.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="media/su-poster.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23141B2D'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='30' text-anchor='middle' fill='%23F2C230'%3ECB%3C/text%3E%3C/svg%3E">
+<title>Clay Bryden — Marketing Graduate Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: campaign-poster rhythm — oversized condensed headlines, a left index rail for each case study, canola-yellow marker highlights on the numbers. */
+:root{
+  --paper:#F3F4EF;
+  --surface:#E7E9E1;
+  --ink:#141B2D;
+  --muted:#4F586B;
+  --line:#C9CDC2;
+  --canola:#F2C230;
+  --canola-ink:#141B2D;
+  --font-display:"Big Shoulders Display","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  --font-body:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,4vw,48px);
+  --max:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F1422;--surface:#182033;--ink:#EEF0E8;--muted:#A3ABBD;--line:#2A3449;
+    --canola:#F2C230;--canola-ink:#141B2D;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0F1422;--surface:#182033;--ink:#EEF0E8;--muted:#A3ABBD;--line:#2A3449;
+  --canola:#F2C230;--canola-ink:#141B2D;color-scheme:dark;
+}
+*{box-sizing:border-box}
+img{max-width:100%}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:17px;line-height:1.6;padding-inline:var(--gutter);padding-block:0}
+.wrap{max-width:var(--max);margin-inline:auto}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--canola);outline-offset:3px;border-radius:2px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--line);margin-inline:calc(var(--gutter) * -1);padding:14px var(--gutter)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-family:var(--font-display);font-weight:800;font-size:1.5rem;letter-spacing:.01em;text-decoration:none;text-transform:uppercase}
+.brand sup{font-size:.55em;font-weight:600}
+.nav ul{display:flex;gap:clamp(14px,3vw,32px);list-style:none;margin:0;padding:0}
+.nav ul a{font-family:var(--font-mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding-block:4px;border-bottom:2px solid transparent}
+.nav ul a:hover{border-color:var(--canola)}
+
+/* hero */
+.hero{padding-block:clamp(48px,9vw,110px) clamp(40px,7vw,80px);display:grid;gap:28px}
+.eyebrow{font-family:var(--font-mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.hero h1{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(4.2rem,17vw,13rem);line-height:.82;letter-spacing:-.01em}
+.hero h1 .last{display:block;color:transparent;-webkit-text-stroke:2px var(--ink)}
+.hero-foot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:28px 48px;align-items:end;border-top:2px solid var(--ink);padding-top:22px}
+.place{font-family:var(--font-display);font-weight:800;font-size:1.6rem;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.place::before{content:"";width:12px;height:12px;background:var(--canola);border-radius:50%;flex:none}
+.lede{font-size:clamp(1.1rem,1.8vw,1.35rem);line-height:1.5;max-width:60ch}
+.cta{display:inline-flex;align-items:center;gap:12px;margin-top:22px;background:var(--canola);color:var(--canola-ink);font-family:var(--font-display);font-weight:800;font-size:1.25rem;text-transform:uppercase;letter-spacing:.03em;text-decoration:none;padding:12px 22px;transition:transform .15s}
+.cta:hover{transform:translateY(-2px)}
+.cta span{font-family:var(--font-body);font-weight:600}
+
+/* section heads */
+section{padding-block:clamp(56px,8vw,100px);border-top:1px solid var(--line)}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px 32px;margin-bottom:clamp(36px,5vw,60px)}
+.sec-head h2{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(2.6rem,7vw,5.2rem);line-height:.9}
+.tag{font-family:var(--font-mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;border:1.5px solid var(--ink);padding:6px 12px}
+
+/* case studies */
+.cases{display:grid;gap:clamp(56px,8vw,96px)}
+.case{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(24px,4vw,56px);align-items:start}
+.case:nth-child(even) .case-text{order:2}
+.case-text{display:grid;gap:18px;min-width:0}
+.case-text h3{font-family:var(--font-display);font-weight:800;text-transform:uppercase;font-size:clamp(1.9rem,3.6vw,2.8rem);line-height:.95}
+.case-text p{max-width:62ch;color:var(--ink)}
+.case-text p.lead{font-size:1.15rem;font-weight:500}
+mark{background:linear-gradient(transparent 52%,var(--canola) 52%);color:inherit;padding-inline:2px;font-weight:600}
+.media{display:grid;gap:12px;min-width:0;margin:0}
+.media.two{grid-template-columns:1fr 1fr}
+.slot{position:relative;aspect-ratio:3/4;max-width:100%;background:var(--surface);border:1px solid var(--line);overflow:hidden;display:grid;place-items:center}
+.slot.video{aspect-ratio:9/16;max-height:640px;width:100%;justify-self:center;max-width:360px}
+.slot img,.slot video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.slot .ph{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:center;padding:12px;
+  background-image:repeating-linear-gradient(-45deg,transparent 0 10px,color-mix(in srgb,var(--line) 55%,transparent) 10px 11px);position:absolute;inset:0;display:grid;place-items:center}
+
+/* skills */
+.skills{display:flex;flex-wrap:wrap;gap:12px;list-style:none;margin:0;padding:0}
+.skills li{font-family:var(--font-display);font-weight:800;text-transform:uppercase;font-size:clamp(1.3rem,2.6vw,2rem);line-height:1;padding:12px 20px;border:2px solid var(--ink);transition:background .15s,color .15s}
+.skills li:hover{background:var(--canola);color:var(--canola-ink);border-color:var(--canola)}
+
+/* experience */
+.timeline{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.timeline li{display:grid;grid-template-columns:minmax(0,160px) minmax(0,1fr);gap:8px 40px;padding-block:28px;border-bottom:1px solid var(--line)}
+.years{font-family:var(--font-mono);font-size:.95rem;font-variant-numeric:tabular-nums;color:var(--muted);padding-top:6px}
+.timeline h3{font-family:var(--font-display);font-weight:800;text-transform:uppercase;font-size:clamp(1.5rem,2.8vw,2.2rem);line-height:1}
+.timeline p{margin-top:8px;color:var(--muted)}
+
+/* contact */
+.contact{background:var(--canola);color:var(--canola-ink);margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);border-top:0}
+.contact .wrap{display:grid;gap:24px}
+.contact .eyebrow{color:var(--canola-ink);opacity:.8}
+.contact h2{font-family:var(--font-display);font-weight:900;text-transform:uppercase;font-size:clamp(4rem,15vw,11rem);line-height:.85}
+.contact-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:800;text-transform:uppercase;font-size:1.3rem;text-decoration:none;padding:12px 22px;border:2px solid var(--canola-ink);color:var(--canola-ink);background:transparent;cursor:pointer;transition:background .15s,color .15s}
+.btn.solid,.btn:hover{background:var(--canola-ink);color:var(--canola)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.foot-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px}
+.email-chip{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;color:var(--ink);font-size:.9rem;min-width:0;word-break:break-all}
+.email-chip #email-addr{user-select:all}
+.copy{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;background:transparent;color:var(--ink);border:1.5px solid var(--ink);padding:5px 10px;cursor:pointer}
+.copy:hover{background:var(--canola);color:var(--canola-ink);border-color:var(--canola)}
+footer{padding-block:24px;font-family:var(--font-mono);font-size:.78rem;color:var(--muted);letter-spacing:.04em}
+
+@media (max-width:820px){
+  .hero-foot{grid-template-columns:1fr}
+  .case{grid-template-columns:1fr}
+  .case:nth-child(even) .case-text{order:0}
+  .timeline li{grid-template-columns:1fr}
+  .years{padding-top:0}
+}
+@media (max-width:420px){
+  .media.two{grid-template-columns:1fr}
+  .hero h1 .last{-webkit-text-stroke:1.5px var(--ink)}
+}
+</style>
+</head>
+<body>
+
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Clay Bryden<sup>®</sup></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <div class="hero">
+      <p class="eyebrow">Portfolio — Class of 2026</p>
+      <h1>Clay <span class="last">Bryden</span></h1>
+      <div class="hero-foot">
+        <p class="place">Based in Alberta</p>
+        <div>
+          <p class="lede">I turn ideas into social media campaigns people actually notice. Fresh out of business school, with experience in event promotion and small-business marketing, I'm looking for a team that likes loud ideas backed by real numbers.</p>
+          <a class="cta" href="#work">See the work <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Some Case Studies of Mine</h2>
+        <span class="tag">Social Media &amp; Marketing</span>
+      </div>
+
+      <div class="cases">
+        <article class="case">
+          <div class="case-text">
+            <h3>2025 Wellness Tool-Kit Series Advertisements</h3>
+            <p>During my time as a Student Wellness Ambassador, I worked with many organizations in Lethbridge, demonstrating strong communication skills and event advertising experience. One such event was the “Wellness Tool Kit Series,” where I coordinated with Student Support Services, the University of Lethbridge Student Union, the Student Wellness Ambassador Program, and Horns Recreation Services. During this event, I also directed an Instagram reel that produced <mark>over 8,600 views and 140 likes</mark>.</p>
+          </div>
+          <figure class="media">
+            <div class="slot video" data-slot="reel"><video src="media/reel.mp4" controls playsinline preload="metadata" aria-label="2025 Wellness Tool-Kit Series Advertisements"></video></div>
+          </figure>
+        </article>
+
+        <article class="case">
+          <div class="case-text">
+            <h3>2024 &amp; 2025 Pop-Up Thrift Drive and Thrift Store</h3>
+            <p class="lead">As the President of the Dhillon Business Students Association, I worked with the University Rotaract Club to promote and execute a campus thrift drive and pop-up shop. All proceeds from this pop-up shop went to the <mark>Interfaith Food Bank</mark>.</p>
+          </div>
+          <figure class="media">
+            <div class="slot" data-slot="thrift" style="max-width:380px;width:100%;justify-self:center;aspect-ratio:354/466"><img src="media/thrift.jpg" alt="2025 Pop-Up Thrift Drive and Thrift Store" loading="lazy"></div>
+          </figure>
+        </article>
+
+        <article class="case">
+          <div class="case-text">
+            <h3>25–26 University of Lethbridge Student Union Representative</h3>
+            <p>Assisted in the creation, promotion, and execution of many Student Union events. These events varied from yearly university-held concerts with artists such as Brett Kessel to smaller events such as paint-and-sip nights for students; through my determination, I earned the <mark>Student Union Volunteer of the Year award</mark>.</p>
+          </div>
+          <figure class="media">
+            <div class="slot" data-slot="su-1" style="max-width:460px;width:100%;justify-self:center"><img src="media/su-poster.jpg" alt="Previous Campaign image" loading="lazy"></div>
+          </figure>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="sec-head"><h2>What I Bring</h2></div>
+      <ul class="skills">
+        <li>Brand Strategy</li>
+        <li>Content Creation</li>
+        <li>Customer Service Experience</li>
+        <li>Event planning and Promotion</li>
+        <li>Public Speaking</li>
+        <li>Market Research</li>
+        <li>Campaign Planning</li>
+        <li>Social Media</li>
+        <li>Analytics &amp; Reporting</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="sec-head"><h2>Experience</h2></div>
+      <ol class="timeline">
+        <li>
+          <span class="years">2024 — 26</span>
+          <div>
+            <h3>Social Media Manager — Spa-Spot Lloydminster</h3>
+            <p>Ran Instagram and Facebook pages using Meta Business Suite.</p>
+          </div>
+        </li>
+        <li>
+          <span class="years">2024 — 25</span>
+          <div>
+            <h3>President — Dhillon Business Students Association</h3>
+            <p>Led a 30-person team to plan, market, execute, and host events on campus.</p>
+          </div>
+        </li>
+        <li>
+          <span class="years">2021 — 26</span>
+          <div>
+            <h3>Bachelor of General Management — University of Lethbridge</h3>
+            <p>Major in Marketing, minor in New Media</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <p class="eyebrow">Open to full-time roles &amp; contract work</p>
+      <h2>Let’s Talk</h2>
+      <div class="contact-row">
+        <a class="btn solid" href="mailto:clay.bryden171@gmail.com">Email me</a>        <a class="btn" href="https://www.linkedin.com/in/clay-bryden/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3V9.5zm7 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4V9.5z"/></svg>LinkedIn</a>
+        <a class="btn" href="https://www.instagram.com/clay03_17/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3.1 0-4.1.1C4.4 2.3 2.3 4.4 2.1 7.9 2 8.9 2 9.3 2 12s0 3.1.1 4.1c.2 3.5 2.3 5.6 5.8 5.8 1 .1 1.4.1 4.1.1s3.1 0 4.1-.1c3.5-.2 5.6-2.3 5.8-5.8.1-1 .1-1.4.1-4.1s0-3.1-.1-4.1c-.2-3.5-2.3-5.6-5.8-5.8C15.1 2 14.7 2 12 2zm0 1.8c2.7 0 3 0 4 .1 2.5.1 3.9 1.5 4 4 .1 1 .1 1.3.1 4s0 3-.1 4c-.1 2.5-1.5 3.9-4 4-1 .1-1.3.1-4 .1s-3 0-4-.1c-2.5-.1-3.9-1.5-4-4-.1-1-.1-1.3-.1-4s0-3 .1-4c.1-2.5 1.5-3.9 4-4 1-.1 1.3-.1 4-.1z"/></svg>Instagram</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <span>© 2026 Clay Bryden — Marketing Graduate</span>
+    <span class="email-chip"><span id="email-addr">clay.bryden171@gmail.com</span><button type="button" id="copy-email" class="copy">Copy</button></span>
+  </div>
+</footer>
+<script>
+(function(){
+  var btn=document.getElementById('copy-email'),addr=document.getElementById('email-addr');
+  btn.addEventListener('click',function(){
+    function selectIt(){var r=document.createRange();r.selectNodeContents(addr);var s=getSelection();s.removeAllRanges();s.addRange(r);}
+    function done(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy';},1800);}
+    try{navigator.clipboard.writeText(addr.textContent).then(done,selectIt);}catch(e){selectIt();}
+  });
+})();
+</script>
+
+</body>
+</html>
